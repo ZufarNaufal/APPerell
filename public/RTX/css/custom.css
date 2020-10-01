@@ -1,0 +1,126 @@
+/* Custom CSS made By : RTX-FALL */
+
+
+/* Navigation */
+.navigation {
+	position: fixed;
+	left: -70px;
+	top: 0;
+	bottom: 0;
+	background: #f6f4f3;
+	border-right: 1px solid #f8e809;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	transition: 0.2s ease-in-out left;
+	box-shadow: 3px 0 6px rgba(0, 0, 0, 0.1);
+}
+.open {
+	left: 0;
+}
+.nav-list {
+	text-align: center;
+	list-style: none;
+}
+.nav-item {
+	padding: 16px 10px;
+	transition: 0.1s ease-in-out transform;
+}
+.link {
+	color: #fff;
+	text-decoration: none;
+}
+.icon {
+	font-size: 1.5em;
+	margin-bottom: 5px;
+	color: #f03a61;
+	text-shadow: 3px 0 6px rgba(0, 0, 0, 0.1);
+}
+.label {
+	font-size: 0.6em;
+	font-weight: 300;
+	opacity: 0;
+	transition: 0.2s ease-in-out opacity;
+	color: black;
+}
+.nav-item:hover {
+	transform: scale(1.2);
+	transform-origin: center center;
+}
+.nav-item:hover .label {
+	opacity: 1;
+}
+.trigger {
+	position: absolute;
+	top: 20px;
+	left: 90px;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+	color: #fff;
+	transition: 0.15s ease-in-out transform;
+}
+.rotate-trigger {
+	transform: rotate(180deg);
+}
+
+body {
+	background: #3e3e3e;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+.carousel {
+	width: 80vw;
+	height: 250px;
+	border-radius: 3px;
+	overflow: hidden;
+	position: relative;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+.slides {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	display: flex;
+	width: 100%;
+	transition: 1s ease-in-out;
+}
+.slide {
+	min-width: 100%;
+	min-height: 250px;
+	height: auto;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: #f8e809;
+	font-family: 'Roboto', sans-serif;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.card {
+	max-width: 350px;
+	background: #ffffff;
+	border-radius: 8px;
+	box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+}
+.card .card-header {
+	width: 100%;
+	height: 275px;
+	/*background: url('./img/card-header-bg.jpg') no-repeat center center;*/
+	background-size: cover;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+}
+.card .card-body {
+	padding: 24px;
+}
